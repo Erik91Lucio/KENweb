@@ -1,0 +1,122 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+}
+
+a {
+  color: #00B7FF;
+}
+article {
+  border: 2px solid #ffffff;
+  padding: 30px;
+  margin: 20px;
+  background-color: black;
+}
+#titulo {
+  text-align: center;
+  color: #D7D7D7; 
+}
+#tabla {
+  background-color: white;
+  margin-left: 25%;
+}
+#telf {
+  padding-top: 5%;
+  padding-bottom: 20%;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+ #t1, #t2{
+  height: 50%;
+  width: 50%;
+  margin: 25%
+}
+#info {
+  margin-left: 25%;
+}
+#datos {
+  margin-top: 5%;
+  margin-left: 25%;
+  width: 19.1%;
+}
+#datos input {
+  margin-bottom: 7.66%;
+  width: 255%;
+}
+#consulta {
+  margin-left: 25%;
+}
+#consulta textarea {
+  width: 65%;
+}
+#boton {
+  margin-left: 25%;
+  margin-top: 2.5%;
+}
+#flashinfo {
+  width: 450px;
+  border: 2px solid blue;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#flashinfo h3 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #00c;
+    color: #fff; 
+}
+#flashinfo ul li {
+    font-size: 12px;
+    list-style: square; 
+}
+#flashsuccess {
+  width: 450px;
+  border: 2px solid green;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#flashsuccess h3 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #0c0;
+    color: #fff; 
+}
+#flashsuccess ul li {
+    font-size: 12px;
+    list-style: square; 
+}
+#flasherror {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+#flasherror h3 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff; 
+}
+#flasherror ul li {
+    font-size: 12px;
+    list-style: square;
+}

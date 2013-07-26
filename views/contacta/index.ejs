@@ -1,0 +1,76 @@
+<br></br>
+<div class='container-fluid'>
+	<div class='row-fluid'>
+		<div class='span12'>
+			<div class='hidden-phone'>
+                <table width='50%' height='50%' border='5' id='tabla'>
+                    <tr>
+                        <td class='telf' rowspan='3' width='50%' height='50%'>
+                            <img height='100%' id='t1' src="/images/telf1.png" alt="telefono" />
+                        </td>
+                        <td><a href='/conocenos/index'>Karla</a>
+                            <p> Tflno contacto: <br> e-mail: </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href='/conocenos/index'>Erik</a>
+                            <p> Tflno contacto: <br> e-mail: </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href='/conocenos/index'>Nora</a>
+                            <p> Tflno contacto: <br> e-mail: </p>
+                        </td>
+                    </tr>
+                </table>
+                <br></br>
+                <h2 id='info'>Informate:</h2>
+                <form method='post' action='/contacta/pregunta' class='form-horizontal'>
+                    <div id='datos'>
+                        <input id='nombre' name='nombre' placeholder='Nombre' type='text'><br>
+                        <input id='email' name='email' placeholder='E-mail' type='text'><br>
+                        <input id='telefono' name='telefono' placeholder='Teléfono' type='text'><br>
+                    </div>
+                    <div id='consulta'>
+                        <textarea rows="5" placeholder="Introduzca su consulta"  id='pregunta' name='pregunta' >
+                        </textarea>
+                    </div>
+                    <div id='boton'>
+                        <input type = "submit" class='btn btn-primary' value = "Enviar" onclick="cargando()">
+                    </div>
+                </form>
+            </div>
+		</div>
+        <div class='visible-phone'>
+            <ul>
+                <li>
+                    <a href='/conocenos/index'>Karla</a>
+                    <p> Tflno contacto: <br> e-mail: </p>  
+                </li>
+                <li>
+                    <a href='/conocenos/index'>Erik</a>
+                    <p> Tflno contacto: <br> e-mail: </p>  
+                </li>
+                <li>
+                    <a href='/conocenos/index'>Nora</a>
+                    <p> Tflno contacto: <br> e-mail: </p>  
+                </li>
+            </ul>
+        </div>
+	</div>
+</div>
+
+<script type="text/javascript">
+    var imagenes = new Array('/images/telf1.png', '/images/telf2.png');
+    var t = document.getElementById('telf');
+    var i =0;
+    setInterval(function(){
+        if(i==0){i=1;}
+        else{i=0;}
+        mover(imagenes[i]);
+        }, 600);
+    function mover(nuevaImagen) {
+        var imagen = document.getElementById('t1')
+        imagen.src = nuevaImagen;
+        } 
+</script>

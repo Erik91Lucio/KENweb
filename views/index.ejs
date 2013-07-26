@@ -1,0 +1,41 @@
+<div class='container-fluid'>
+    <div class='row-fluid'>
+        <div class='hidden-phone'>
+            <h1 id='titulo'><em><marquee behavior="alternate" scrollamount="10">Bienvenido a <%=title%></marquee></em></h1><br></br>
+            <div class='span11'>
+                <div class='span6'>
+                    <img id='imag' src="/images/foto8.png">
+                </div>
+                <div class='span6'>
+                    <p>En KENWeb nos preocupamos por ofrecer un servicio de diseño web con la mejor relación calidad-precio, adaptándonos a lo que realmente necesitan nuestros clientes. </p>
+                </div>
+            </div>
+        </div>
+        <div class='visible-phone'>
+            <h1 id='titulo'><em>Bienvenido a <%=title%></em> </h1><br></br>
+            <div class='span11'>
+                <div class='span3'>
+                    <img src="images/Bugs_Bunny.jpg" alt="" />
+                </div>
+                <br></br>
+                <div class='span3'>
+                    <p>En KENWeb nos preocupamos por ofrecer un servicio de diseño web con la mejor relación calidad-precio, adaptándonos a lo que realmente necesitan nuestros clientes. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var imagenes = new Array('/images/foto1.png', '/images/foto2.png', '/images/foto3.png', '/images/foto4.png', '/images/foto5.png', '/images/foto6.png', '/images/foto7.png', '/images/foto9.png', '/images/foto8.png');
+    var i =-1;
+    setInterval(function(){
+        if(i==8){i=0;}
+        else{i++;}
+        mover(imagenes[i]);
+        }, 5000);
+    function mover(nuevaImagen) {
+        var imagen = document.getElementById('imag')
+        imagen.src = nuevaImagen;
+        } 
+</script>
